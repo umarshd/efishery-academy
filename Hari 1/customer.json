@@ -1,0 +1,12 @@
+{
+  "customers": [
+    {<customer_object>
+    },
+    {<customer_object>
+    },
+    {<customer_object>
+    },
+    {<customer_object>
+    },
+  ];
+}
