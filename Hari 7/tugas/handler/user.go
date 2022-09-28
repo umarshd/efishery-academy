@@ -54,7 +54,6 @@ func (handler UserHandler) GetAllUser(c echo.Context) error {
 		return c.JSON(http.StatusNotFound, entity.ErrorResponse{
 			Code:    http.StatusNotFound,
 			Message: "Get users Failed. No users found",
-			Error:   err.Error(),
 		})
 	}
 
