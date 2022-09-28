@@ -94,9 +94,9 @@ func (useCase UserUseCase) UpdateUser(userReq entity.UserRequest, id int) (entit
 
 	dataUser := entity.User{
 		ID:    user.ID,
-		Name:  user.Name,
-		Email: user.Email,
-		Phone: user.Phone,
+		Name:  userReq.Name,
+		Email: userReq.Email,
+		Phone: userReq.Phone,
 	}
 
 	user, err = useCase.userRepository.Update(dataUser)
